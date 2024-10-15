@@ -26,7 +26,7 @@ Clone the Repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/amazon-shopping-automation.git
+git clone (https://github.com/MeenaMagesh1995/Sumanas.git)
 cd amazon-shopping-automation
 Install Dependencies:
 
