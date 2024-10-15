@@ -59,17 +59,18 @@ Pre-condition Setup (@BeforeMethod):
 This section opens the Amazon India homepage, maximizes the browser window, and verifies the page title.
 
 java
-Copy code
-@BeforeMethod
+
+@BeforeMethod ---Setup Process
 public void preCondition() {
-    driver = new ChromeDriver();
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+    driver = new ChromeDriver(); --- Intializing the Chrome browser
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); ---- 
     driver.get("https://www.amazon.in/");
     String ActualTitle = driver.getTitle();
     String ExpectedTitle = "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
     Assert.assertEquals(ExpectedTitle, ActualTitle);
     driver.manage().window().maximize();
 }
+
 Test Case (@Test):
 
 Searches for "Bags for b" on Amazon.
