@@ -23,13 +23,11 @@ ChromeDriver: Ensure that you have Chrome installed, and download the correspond
 
 Project Setup
 Clone the Repository:
-
 bash
 Copy code
 git clone (https://github.com/MeenaMagesh1995/Sumanas.git)
-cd amazon-shopping-automation
-Install Dependencies:
 
+Install Dependencies:
 Maven (for dependency management): If you're using Maven, include the following dependencies in your pom.xml file:
 
 xml
@@ -53,6 +51,7 @@ Download the ChromeDriver and set the system property in your code (if not done 
 java
 Copy code
 System.setProperty("webdriver.chrome.driver", "path_to_your_chromedriver");
+
 Code Overview
 Key Components of the Code:
 Pre-condition Setup (@BeforeMethod):
@@ -127,9 +126,8 @@ Open the project in your IDE.
 Right-click on the Amazon class and select Run.
 Using Maven: If you're using Maven, you can run the tests using the following command in the terminal:
 
-bash
-Copy code
-mvn test
+
+
 TestNG Reports: TestNG will generate an HTML report after running the test. You can find this report in the test-output folder.
 
 Notes
